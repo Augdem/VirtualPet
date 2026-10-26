@@ -21,6 +21,10 @@ public class VirtualPet {
       // hunger < 10
       // energy > 0
       // choice != 5
+      
+      while (happiness < 15 && hunger < 10 && energy > 0 && choice != 0) {
+      
+      }
 
          // TODO 2:
          // Display happiness, hunger, and energy.
