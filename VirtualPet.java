@@ -22,7 +22,7 @@ public class VirtualPet {
       // energy > 0
       // choice != 5
       
-      while (happiness < 15 && hunger < 10 && energy > 0 && choice != 0) {
+      while (happiness < 15 && hunger < 10 && energy > 0 && choice != 5) {
       
       }
 
