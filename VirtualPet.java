@@ -5,15 +5,22 @@ public class VirtualPet {
    public static void main(String[] args) {
 
       Scanner input = new Scanner(System.in);
+      Scanner nameInput =  new Scanner(System.in);
 
       int happiness = 5;
       int hunger = 5;
       int energy = 5;
-      
+      String petName = "";
       int choice = 0;
-      
+       
       System.out.println("Welcome to Virtual Pet Simulator!");
-      System.out.println("Your pet's name is Mr. Pickles.");
+      System.out.println("Pet name? Cannot be blank, no characters.");
+      
+      while (petName == "") {
+      petName = nameInput.next();
+      }
+     
+      System.out.println("Your pet's name is " + petName + ".");
 
       // TODO 1:
       // Create a while loop that continues while:
@@ -42,26 +49,49 @@ public class VirtualPet {
          
          choice = input.nextInt();
         
-        if (choice == 1) { 
+        if (choice == 1) {
+        System.out.println("");
+        System.out.println("Feeding " + petName + "."); 
         happiness += 1;
         hunger -= 3;
-        } else if (choice == 2) { 
+        } else if (choice == 2) {
+        System.out.println("");
+        System.out.println("Playing with " + petName + "."); 
         happiness += 3;
         hunger += 2;
         energy -= 2;
         } else if (choice == 3) { 
+        System.out.println("");
+        System.out.println("Letting " + petName + " rest.");
         happiness -= 1;
         hunger += 1;
         energy += 3;
-        } else if (choice == 4) { 
+        } else if (choice == 4) {
+        System.out.println("");
+        System.out.println("Bathing " + petName + "."); 
         happiness += 2;
         hunger += 1;
         energy -= 1;
-        }
+        } else {
+        System.out.println("");
+        System.out.println("INVALID INPUT!");
       
       }
       
       
+       
+   }
+      if (choice == 5) { 
+      System.out.println("");
+      System.out.println("You left " + petName + ".");
+      }
+      else if (hunger >= 10) {
+      System.out.println("");
+      System.out.println(petName + " got too hungry and left");
+      } else if (energy < 1) {
+      System.out.println("");
+      System.out.println(petName + " is at the farm"); 
+      }
          
          // TODO 3:
          // Create an if / else if / else statement
