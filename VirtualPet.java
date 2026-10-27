@@ -14,7 +14,7 @@ public class VirtualPet {
       int choice = 0;
        
       System.out.println("Welcome to Virtual Pet Simulator!");
-      System.out.println("Pet name? Cannot be blank, no characters.");
+      System.out.println("Pet name? Cannot be blank, must have one or more characters.");
       
       while (petName == "") {
       petName = nameInput.next();
