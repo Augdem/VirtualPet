@@ -33,6 +33,7 @@ public class VirtualPet {
           System.out.println("Happiness = " + happiness);
           System.out.println("Hunger = " + hunger);
           System.out.println("Energy = " + energy);
+          System.out.println("");
           
      
 
