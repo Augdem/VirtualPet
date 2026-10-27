@@ -92,6 +92,10 @@ public class VirtualPet {
       } else if (energy < 1) {
       System.out.println("");
       System.out.println(petName + " is at the farm"); 
+      } else if (happiness >= 15) {
+      System.out.println("");
+      System.out.println(petName + " is so happy! You win!"); 
+
       }
          
          // TODO 3:
