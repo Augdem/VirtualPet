@@ -89,10 +89,10 @@ public class VirtualPet {
       }
       else if (hunger >= 10) {
       System.out.println("");
-      System.out.println(petName + " got too hungry and left");
+      System.out.println(petName + " got too hungry and left.");
       } else if (energy < 1) {
       System.out.println("");
-      System.out.println(petName + " is at the farm"); 
+      System.out.println(petName + " is at the farm."); 
       } else if (happiness >= 15) {
       System.out.println("");
       System.out.println(petName + " is so happy! You win!"); 
