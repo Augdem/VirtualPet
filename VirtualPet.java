@@ -21,13 +21,17 @@ public class VirtualPet {
       // hunger < 10
       // energy > 0
       // choice != 5
-      
       while (happiness < 15 && hunger < 10 && energy > 0 && choice != 5) {
-      
-      }
+          System.out.println("");
+          System.out.println("Happiness = " + happiness);
+          System.out.println("Hunger = " + hunger);
+          System.out.println("Energy = " + energy);
+          
+     
 
          // TODO 2:
          // Display happiness, hunger, and energy.
+         
          
          System.out.println("What would you like to do?");
          System.out.println("1. Feed");
@@ -37,9 +41,31 @@ public class VirtualPet {
          System.out.println("5. Quit");
          
          choice = input.nextInt();
+        
+        if (choice == 1) { 
+        happiness += 1;
+        hunger -= 3;
+        } else if (choice == 2) { 
+        happiness += 3;
+        hunger += 2;
+        energy -= 2;
+        } else if (choice == 3) { 
+        happiness -= 1;
+        hunger += 1;
+        energy += 3;
+        } else if (choice == 4) { 
+        happiness += 2;
+        hunger += 1;
+        energy -= 1;
+        }
+      
+      }
+      
+      
          
          // TODO 3:
          // Create an if / else if / else statement
+         
          // to handle the player's choice.
          //
          // Update the three statistics according
