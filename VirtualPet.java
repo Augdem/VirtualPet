@@ -47,6 +47,7 @@ public class VirtualPet {
          System.out.println("3. Sleep");
          System.out.println("4. Bath");
          System.out.println("5. Quit");
+         System.out.println("");
          
          choice = input.nextInt();
         
